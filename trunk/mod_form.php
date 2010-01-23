@@ -57,7 +57,7 @@ class mod_mplayer_mod_form extends moodleform_mod {
 
 //--------------------------------------- MEDIA SOURCE ----------------------------------------
 	$mform->addElement('header', 'mplayersource', get_string('mplayersource', 'mplayer'));
-	$mform->setHelpButton('mplayersource', array('mplayer_mplayersource', get_string('mplayersource', 'mplayer'), 'mplayer'));
+	$mform->setHelpButton('mplayersource', array('mplayer_source', get_string('mplayersource', 'mplayer'), 'mplayer'));
 	// mplayerfile
 	$mform->addElement('choosecoursefile', 'mplayerfile', get_string('mplayerfile', 'mplayer'), array('courseid'=>$COURSE->id));
 	$mform->addRule('mplayerfile', get_string('required'), 'required', null, 'client');
@@ -72,7 +72,7 @@ class mod_mplayer_mod_form extends moodleform_mod {
 	
 ////--------------------------------------- playlists ---------------------------------------
 	$mform->addElement('header', 'playlists', get_string('playlists', 'mplayer'));
-	$mform->setHelpButton('playlists', array('mplayer_playlists', get_string('playlists', 'mplayer'), 'mplayer'));
+	$mform->setHelpButton('playlists', array('mplayer_playlist', get_string('playlists', 'mplayer'), 'mplayer'));
 	// playlist
 	$mform->addElement('select', 'playlist', get_string('playlist', 'mplayer'), mplayer_list_playlistposition());
 	$mform->setDefault('playlist', 'none');
@@ -96,7 +96,7 @@ class mod_mplayer_mod_form extends moodleform_mod {
 	
 ////--------------------------------------- configxml ---------------------------------------
 	$mform->addElement('header', 'config', get_string('config', 'mplayer'));
-	$mform->setHelpButton('config', array('mplayer_config', get_string('appearance', 'mplayer'), 'mplayer'));
+	$mform->setHelpButton('config', array('mplayer_configxml', get_string('appearance', 'mplayer'), 'mplayer'));
 	// configxml
 	$mform->addElement('choosecoursefile', 'configxml', get_string('configxml', 'mplayer'), array('courseid'=>$COURSE->id));
 	$mform->setAdvanced('configxml');
@@ -107,7 +107,6 @@ class mod_mplayer_mod_form extends moodleform_mod {
 	//notes
     $mform->addElement('htmleditor', 'notes', get_string('notes', 'mplayer'), array('canUseHtmlEditor'=>'detect','rows'=>10, 'cols'=>65, 'width'=>0,'height'=>0));
 	$mform->setType('notes', PARAM_RAW);
-	$mform->setHelpButton('notes', array('mplayer_notes', get_string('notes', 'mplayer'), 'mplayer'));
 	// width
 	$mform->addElement('text', 'width', get_string('width', 'mplayer'), $mplayer_int_array);
 	$mform->addRule('width', get_string('required'), 'required', null, 'client');
@@ -118,83 +117,77 @@ class mod_mplayer_mod_form extends moodleform_mod {
 	$mform->setDefault('height', '480');
 	// skin
 	$mform->addElement('select', 'skin', get_string('skin', 'mplayer'), mplayer_list_skins());
-	$mform->setHelpButton('skin', array('mplayer_skins', get_string('skin', 'mplayer'), 'mplayer'));
 	$mform->setDefault('skin', '');
 	// image
 	$mform->addElement('choosecoursefile', 'image', get_string('image', 'mplayer'), array('courseid'=>$COURSE->id));
-	$mform->setHelpButton('image', array('mplayer_image', get_string('image', 'mplayer'), 'mplayer'));
 	// icons
 	$mform->addElement('select', 'icons', get_string('icons', 'mplayer'), mplayer_list_truefalse());
 	// controlbar
 	$mform->addElement('select', 'controlbar', get_string('controlbar', 'mplayer'), mplayer_list_controlbar());
 	$mform->setDefault('controlbar', 'bottom');
-	// smoothing
-	$mform->addElement('select', 'smoothing', get_string('smoothing', 'mplayer'), mplayer_list_truefalse());
-	$mform->setDefault('smoothing', 'true');
 	// backcolor
 	$mform->addElement('text', 'backcolor', get_string('backcolor', 'mplayer'), $mplayer_int_array);
 	$mform->setDefault('backcolor', 'ffffff');
 	$mform->setAdvanced('backcolor');
-	$mform->setHelpButton('backcolor', array('mplayer_colors', get_string('backcolor', 'mplayer'), 'mplayer'));
 	// frontcolor
 	$mform->addElement('text', 'frontcolor', get_string('frontcolor', 'mplayer'), $mplayer_int_array);
 	$mform->setDefault('frontcolor', '555555');
 	$mform->setAdvanced('frontcolor');
-	$mform->setHelpButton('frontcolor', array('mplayer_colors', get_string('frontcolor', 'mplayer'), 'mplayer'));
 	// lightcolor
 	$mform->addElement('text', 'lightcolor', get_string('lightcolor', 'mplayer'), $mplayer_int_array);
 	$mform->setDefault('lightcolor', '000000');
 	$mform->setAdvanced('lightcolor');
-	$mform->setHelpButton('lightcolor', array('mplayer_colors', get_string('lightcolor', 'mplayer'), 'mplayer'));
 	// screencolor
 	$mform->addElement('text', 'screencolor', get_string('screencolor', 'mplayer'), $mplayer_int_array);
 	$mform->setDefault('screencolor', '000000');
 	$mform->setAdvanced('screencolor');
-	$mform->setHelpButton('screencolor', array('mplayer_colors', get_string('screencolor', 'mplayer'), 'mplayer'));
-	
+	// smoothing
+	$mform->addElement('select', 'smoothing', get_string('smoothing', 'mplayer'), mplayer_list_truefalse());
+	$mform->setDefault('smoothing', 'true');
+	// quality
+	$mform->addElement('select', 'quality', get_string('quality', 'mplayer'), mplayer_list_quality());
+	$mform->setDefault('quality', 'best');
+	$mform->setAdvanced('quality');
+
 ////--------------------------------------- BEHAVIOUR ---------------------------------------
 	$mform->addElement('header', 'behaviour', get_string('behaviour', 'mplayer'));
 	$mform->setHelpButton('behaviour', array('mplayer_behaviour', get_string('behaviour', 'mplayer'), 'mplayer'));
 	
-//$string['autostart'] = 'Auto Start';
+	// autostart 
 	$mform->addElement('select', 'autostart', get_string('autostart', 'mplayer'), mplayer_list_truefalse());
 	$mform->setDefault('autostart', 'false');
 	
-//$string['fullscreen'] = 'Allow Full Screen';
+	// fullscreen 
 	$mform->addElement('select', 'fullscreen', get_string('fullscreen', 'mplayer'), mplayer_list_truefalse());
 	$mform->setDefault('fullscreen', 'true');
 	
-//$string['stretching'] = 'Stretching';
+	// stretching 
 	$mform->addElement('select', 'stretching', get_string('stretching', 'mplayer'), mplayer_list_stretching());
 	$mform->setDefault('stretching', 'uniform');
 
-//$string['volume'] = 'Volume';
+	// volume 
 	$mform->addElement('select', 'volume', get_string('volume', 'mplayer'), mplayer_list_volume());
 	$mform->setDefault('volume', '90');
 
-//$string['mute'] = 'Mute';
+	// mute 
 	$mform->addElement('select', 'mute', get_string('mute', 'mplayer'), mplayer_list_truefalse());
 	$mform->setDefault('mute', 'false');
 	
-//$string['mplayerstart'] = 'Start (position in seconds)';
+	// mplayerstart 
 	$mform->addElement('text', 'mplayerstart', get_string('mplayerstart', 'mplayer'), $mplayer_int_array);
 	$mform->setDefault('mplayerstart', '0');
 	$mform->setAdvanced('mplayerstart');
 	
-//$string['bufferlength'] = 'Buffer Length (seconds)';
+	// bufferlength 
 	$mform->addElement('select', 'bufferlength', get_string('bufferlength', 'mplayer'), mplayer_list_bufferlength());
 	$mform->setDefault('bufferlength', '1');
 	$mform->setAdvanced('bufferlength');
 	
-//$string['quality'] = 'Quality';
-	$mform->addElement('select', 'quality', get_string('quality', 'mplayer'), mplayer_list_quality());
-	$mform->setAdvanced('quality');
+	// resizing - deprecated
+	//$mform->addElement('select', 'resizing', get_string('resizing', 'mplayer'), mplayer_list_truefalse());
+	//$mform->setAdvanced('resizing');
 	
-//$string['resizing'] = 'Resizing';
-	$mform->addElement('select', 'resizing', get_string('resizing', 'mplayer'), mplayer_list_truefalse());
-	$mform->setAdvanced('resizing');
-	
-//$string['plugins'] = 'Plugins';
+	// plugins 
 	$mform->addElement('text', 'plugins', get_string('plugins', 'mplayer'), $mplayer_url_array);
 	$mform->setDefault('plugins', '');
 	$mform->setAdvanced('plugins');
