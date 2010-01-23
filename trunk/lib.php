@@ -422,6 +422,8 @@ function mplayer_set_paths($mplayer)
 	{
 		$mplayer->resizing = '&resizing='.$mplayer->resizing;
 	}
+	// deprecated
+	$mplayer->resizing = '';
 	
 	// Check for screencolor
 	if($mplayer->screencolor != '')
@@ -524,7 +526,7 @@ function mplayer_set_paths($mplayer)
 	// Check for type
 	if($mplayer->type != '')
 	{
-		$mplayer->type = '&type='.$mplayer->type;
+		$mplayer->type = '&provider='.$mplayer->type; // parameter name has changed to provider
 	}
 	
 	// Check for streamer
@@ -1164,7 +1166,8 @@ function mplayer_list_repeat()
 */
 function mplayer_list_stretching()
 {
-	return array('uniform' => 'uniform',
+	return array('none' => 'none',
+				 'uniform' => 'uniform',
 				'exactfit' => 'exactfit',
 				'fill' => 'fill');
 }
