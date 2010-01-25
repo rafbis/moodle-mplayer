@@ -1,0 +1,5 @@
+#summary About crossdomain.xml policy files, why you need them and how to configure them.
+
+Please be patient. Documentation will be here soon.
+
+JW FLV Player developer documentation: http://developer.longtailvideo.com/trac/wiki/FlashSecurity
