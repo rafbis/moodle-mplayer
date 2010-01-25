@@ -68,6 +68,8 @@
 	$navigation = build_navigation(get_string('mplayer', 'mplayer').': '.$mplayer->name, $id);
     print_header_simple(format_string($mplayer->name), '', $navigation, '', mplayer_print_header_js($mplayer), true, update_module_button($cm->id, $course->id, $strmplayer), navmenu($course, $cm));
 	
+	$mplayer->instance = $id;
+	
 	echo mplayer_print_body($mplayer); // mod/mplayer/lib.php
 	
 /// Finish the page
