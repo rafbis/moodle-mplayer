@@ -1,5 +1,9 @@
 #summary How to use the Metaviewer plugin.
 
+<p><img src="http://matbury.com/tutorials/mplayer-docs/mplayer_metadata.gif" width="860" height="206" alt="Metadata" /></p>
+
+<p><img src="http://matbury.com/tutorials/mplayer-docs/mplayer_metaviewer.gif" width="858" height="127" alt="Metaviewer" /></p>
+
 Please be patient. A how to guide will be here soon.
 
 JW FLV Player developer documentation: http://developer.longtailvideo.com/trac/wiki/PluginsMetaviewer
