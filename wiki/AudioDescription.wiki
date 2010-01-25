@@ -1,3 +1,5 @@
 #summary How to use the Audiodescription plugin.
 
-http://developer.longtailvideo.com/trac/wiki/PluginsAudiodescription
+Please be patient. A how to guide will be here soon.
+
+JW FLV Player developer documentation: http://developer.longtailvideo.com/trac/wiki/PluginsAudiodescription
