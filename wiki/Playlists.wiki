@@ -1,5 +1,7 @@
 #summary How to use playlists with the Media Player plugin.
 
+<p><img src="http://matbury.com/tutorials/mplayer-docs/mplayer_playlist.gif" width="866" height="205" alt="Playlist" /></p>
+
 Please be patient. A how to guide will be here soon.
 
 JW FLV Player developer documentation: http://developer.longtailvideo.com/trac/wiki/Player5Formats#XMLPlaylists
