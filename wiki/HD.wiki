@@ -1,0 +1,5 @@
+#summary How to use the HD plugin.
+
+Please be patient. A how to guide will be here soon.
+
+JW FLV Player developer documentation: http://developer.longtailvideo.com/trac/wiki/PluginsHd
