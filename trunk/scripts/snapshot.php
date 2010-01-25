@@ -2,7 +2,7 @@
 /**
  * This page receives a bitmap image sent by the Snapshot plugin
  * in the Media Player Activity Module and writes a copy of it in
- * a moodledata course files directory /snaphots/
+ * a moodledata/&course->id/snaphots/
  * Please note, if /moodledata/&course->id/snapshots/ directory is
  * not present this script will fail
  *
@@ -57,8 +57,8 @@ if(isset ($GLOBALS["HTTP_RAW_POST_DATA"]))
 	// Get the image from POST data
 	$mplayer_image =  $GLOBALS["HTTP_RAW_POST_DATA"];
 	
-	// Create an easy to find unique file name: snapshot_year_month_date_hours.mins.secs.jpg
-	$mplayer_datetime = date('Y\_M\_dS\_h\.i\.s');
+	// Create an easy to find unique file name, i.e. "snapshot_year_month_date_hours.mins.secs_789.jpg"
+	$mplayer_datetime = date('Y\_M\_dS\_h\.i\.s\_').rand(0,999);
 	
 	// Write the image as a JPG in moodledata/snapshots/
 	if(!$mplayer_filepath = fopen($CFG->dataroot.'/'.$course->id.'/snapshots/snapshot_'.$mplayer_datetime.'.jpg', 'wb'))
@@ -70,12 +70,13 @@ if(isset ($GLOBALS["HTTP_RAW_POST_DATA"]))
 	fclose($mplayer_filepath);
 	
 	// Send the image filename and path back to the Media Player Snapshot plugin
+	$mplayer_moodledata = $CFG->wwwroot.'/file.php/'.$course->id.'/';
 	if (exif_imagetype($CFG->dataroot.'/'.$course->id.'/snapshots/snapshot_'.$mplayer_datetime.'.jpg') == IMAGETYPE_JPEG) {
-		$mplayer_moodledata = $CFG->wwwroot.'/file.php/'.$course->id.'/';
 		echo $mplayer_moodledata.'snapshots/snapshot_'.$mplayer_datetime.'.jpg';
 		exit();
 	}
 } else {
-	echo 'error: '.$mplayer_moodledata.'snapshots/snapshot_'.$mplayer_datetime.'.jpg was not written;
+	echo 'error: '.$mplayer_moodledata.'snapshots/snapshot_'.$mplayer_datetime.'.jpg was not written';
 }
+
 ?>
