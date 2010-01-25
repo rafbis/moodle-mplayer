@@ -1,5 +1,7 @@
 #summary How to use the Infobox plugin.
 
+<p><img src="http://matbury.com/tutorials/mplayer-docs/mplayer_infobox.gif" width="858" height="155" alt="Infobox" /></p>
+
 Please be patient. A how to guide will be here soon.
 
 JW FLV Player developer documentation: http://developer.longtailvideo.com/trac/wiki/PluginsInfobox
