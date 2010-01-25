@@ -1,5 +1,7 @@
 #summary How to use the Livestream plugin.
 
+<p><img src="http://matbury.com/tutorials/mplayer-docs/mplayer_livestream.gif" width="857" height="241" alt="Livestream" /></p>
+
 Please be patient. A how to guide will be here soon.
 
 JW FLV Player developer documentation: http://developer.longtailvideo.com/trac/wiki/PluginsLivestream
