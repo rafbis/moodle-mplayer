@@ -1,3 +1,5 @@
 #summary How to use a config.xml file with the Media Player plugin
 
 Please be patient. A how to guide will be here soon.
+
+<p><img src="http://matbury.com/tutorials/mplayer-docs/mplayer_configxml.gif" width="858" height="103" alt="Config XML" /></p>
