@@ -1,0 +1,3 @@
+#summary How to use a config.xml file with the Media Player plugin
+
+Please be patient. A how to guide will be here soon.
