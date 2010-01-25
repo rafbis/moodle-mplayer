@@ -1,3 +1,5 @@
 #summary How to use playlists with the Media Player plugin.
 
 Please be patient. A how to guide will be here soon.
+
+JW FLV Player developer documentation: http://developer.longtailvideo.com/trac/wiki/Player5Formats#XMLPlaylists
