@@ -1,0 +1,3 @@
+#summary How to use the Audiodescription plugin.
+
+http://developer.longtailvideo.com/trac/wiki/PluginsAudiodescription
