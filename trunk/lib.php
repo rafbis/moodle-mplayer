@@ -676,7 +676,7 @@ function mplayer_set_paths($mplayer)
 	if($mplayer->snapshotscript != 'none')
 	{
 		$mplayer->snapshotbitmap = '&snapshot.bitmap='.$mplayer->snapshotbitmap;
-		$mplayer->snapshotscript = '&snapshot.script='.$mplayer->snapshotscript;
+		$mplayer->snapshotscript = '&snapshot.script='.$mplayer->snapshotscript.'?id='.$mplayer->instance.'';
 		// add snapshot plugin parameter
 		if($mplayer->plugins != '')
 		{
