@@ -1,8 +1,22 @@
 #summary How to use playlists with the Media Player plugin.
+#labels Featured
 
 <p><img src="http://matbury.com/tutorials/mplayer-docs/mplayer_media_source.gif" width="861" height="155" alt="Media Source" /></p>
 
+There are two parameters to edit here:
+
+  * Media File - Select the playlist file to play here.
+  * Type - Select XML Playlist
+
 <p><img src="http://matbury.com/tutorials/mplayer-docs/mplayer_playlist.gif" width="866" height="205" alt="Playlist" /></p>
+
+Parameters for the playlist's appearance and behaviour:
+
+  * Position - bottom, right or over
+  * Size (pixels) - the width or height, depending on the position, of the playlist
+  * Start Item - which item in the playlist to play first (starts at 0)
+  * Repeat - none, list, always, single
+  * Shuffle - Play videos in the list in a random order
 
 ----
 
