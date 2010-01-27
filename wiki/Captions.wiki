@@ -1,5 +1,7 @@
 #summary How to use the Captions plugin.
 
+<p><img src="http://matbury.com/tutorials/mplayer-docs/mplayer_captions.gif" width="856" height="181" alt="Captions" /></p>
+
 ----
 
 == Example captions file ==
