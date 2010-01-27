@@ -1,6 +1,28 @@
 #summary How to use the Captions plugin.
+#labels Featured
 
 <p><img src="http://matbury.com/tutorials/mplayer-docs/mplayer_captions.gif" width="856" height="181" alt="Captions" /></p>
+
+There are four parameters:
+
+  * Transparent Background - Puts a semi-transparent background area behind the the captions making them easier to read but obscuring part of the video window.
+  * Captions File - The captions to display
+  * Font Size - The size of the captions text (some captions files also contain text formatting information)
+  * Show Captions - Whether captions are shown by default or not. Users can also turn them on or off.
+
+----
+
+== What are the advantages of external captions files? ==
+
+There are several advantages:
+
+  * *They're easier to read* - 
+  * *You can change the size and formatting of the text* - 
+  * *It's easier to create external captions files* - 
+  * *It's easier to edit them* - 
+  * *You can have any number of different captions files for the same video* - 
+  * *They're more search engine friendly (SEO)* - 
+
 
 ----
 
