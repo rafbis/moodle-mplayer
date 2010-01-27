@@ -6,7 +6,7 @@
 There are four parameters:
 
   * Transparent Background - Puts a semi-transparent background area behind the the captions making them easier to read but obscuring part of the video window.
-  * Captions File - The captions to display
+  * Captions File - The captions to display. Anything entered here activates the Captions plugin.
   * Font Size - The size of the captions text (some captions files also contain text formatting information)
   * Show Captions - Whether captions are shown by default or not. Users can also turn them on or off.
 
@@ -16,13 +16,12 @@ There are four parameters:
 
 There are several advantages:
 
-  * *They're easier to read* - 
-  * *You can change the size and formatting of the text* - 
-  * *It's easier to create external captions files* - 
-  * *It's easier to edit them* - 
-  * *You can have any number of different captions files for the same video* - 
-  * *They're more search engine friendly (SEO)* - 
-
+  * *They're easier to read* - They're real text, not graphic images of text so when they scale up or down, they're clear and legible.
+  * *You can change the size and formatting of the text* - Again, they're real text so you can change the font, style, size, etc. at any time without having to re-edit and recode the video.
+  * *It's easier to create external captions files* - There are a number of free and not so free tools available to create your own captions files.
+  * *It's easier to edit them* - They're essentially text files so you can also edit them with a simple text editor. If you find typos or other mistakes when you've finished a project it can take just a few seconds or minutes to correct them.
+  * *You can have any number of different captions files for the same video* - External captions are ideal for multilingual support or different versions of captions for the same video, such as director's or lecturer's notes.
+  * *They're more search engine friendly (SEO)* - Since they're essentially text, search engines can easily find and catalogue them, giving much more accurate information about the content of your videos.
 
 ----
 
