@@ -27,7 +27,7 @@ There are several advantages:
 
 == Example captions file ==
 
-Here is the captions file from the demo on the Media Player Demo:
+Here is the captions file from the demo on the Media Player Demo. You can find the demo here: http://matbury.com/moodle/mod/mplayer/view.php?id=622 (Login as a guest).
 
 {{{
 <tt xmlns="http://www.w3.org/2006/10/ttaf1">
@@ -98,6 +98,16 @@ Here is the captions file from the demo on the Media Player Demo:
 </tt>
 }}}
 
-You can find the demo here: http://matbury.com/moodle/mod/mplayer/view.php?id=622 (Login as a guest)
+----
+
+== Captions writing and editing software ==
+
+You can create and edit captions files in any simple text editor. However, it's easy to make mistakes that will stop your captions from being readable by the Media Player. It's also much quicker and more accurate to use one of the many captioning software packages available.
+
+=== Free captioning software ===
+
+  * SubRip: By far the most popular captions software editor. It can also "rip" subtitles from DVDs, convert them into text and export them in a variety of captions file formats with very little effort.
+
+----
 
 JW FLV Player developer documentation: http://developer.longtailvideo.com/trac/wiki/PluginsCaptions
