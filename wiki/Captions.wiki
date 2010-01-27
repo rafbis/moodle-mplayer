@@ -104,9 +104,24 @@ Here is the captions file from the demo on the Media Player Demo. You can find t
 
 You can create and edit captions files in any simple text editor. However, it's easy to make mistakes that will stop your captions from being readable by the Media Player. It's also much quicker and more accurate to use one of the many captioning software packages available.
 
+There are two main formats of external captions that the Media Player supports:
+
+  # TimedText also known as SubRip
+  # SMIL XML also known as RealText
+
 === Free captioning software ===
 
-  * SubRip: By far the most popular captions software editor. It can also "rip" subtitles from DVDs, convert them into text and export them in a variety of captions file formats with very little effort.
+  * [http://zuggy.wz.cz/ SubRip]: By far the most popular captions software editor. It can also "rip" subtitles from DVDs, convert them into text and export them in a variety of captions file formats with very little effort.
+
+  * [http://ncam.wgbh.org/invent_build/web_multimedia/tools-guidelines/magpie MAGPie]: Award winning captions editor for educational purposes.
+
+  * [http://captiontube.appspot.com/ CaptionTube]: Yep, you can create SubRip (.srt) caption files on-line at YouTube.com!
+
+=== Paid for captioning software ===
+
+  * [http://www.hisoftware.com/products/hicaptionstudio.html Hi-Caption Studio]: Supports a number of captions formats. I haven't tried it.
+
+If you know of any other software for creating SMIL XML or SubRip captions files please post links in the comments below. Thanks in advance!
 
 ----
 
