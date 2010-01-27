@@ -5,10 +5,10 @@
 
 There are four parameters:
 
-  * Transparent Background - Puts a semi-transparent background area behind the the captions making them easier to read but obscuring part of the video window.
-  * Captions File - The captions to display. Anything entered here activates the Captions plugin.
-  * Font Size - The size of the captions text (some captions files also contain text formatting information)
-  * Show Captions - Whether captions are shown by default or not. Users can also turn them on or off.
+  * *Transparent Background* - Puts a semi-transparent background area behind the the captions making them easier to read but obscuring part of the video window.
+  * *Captions File* - The captions to display. Anything entered here activates the Captions plugin.
+  * *Font Size* - The size of the captions text (some captions files also contain text formatting information)
+  * *Show Captions* - Whether captions are shown by default or not. Users can also turn them on or off.
 
 ----
 
