@@ -14,4 +14,10 @@ There are four parameters:
 
 ----
 
+== Search Bar Demo ==
+
+See a demo of the search bar in action: http://matbury.com/moodle/mod/mplayer/view.php?id=626 (Login as a guest)
+
+----
+
 JW FLV Player developer documentation: http://developer.longtailvideo.com/trac/wiki/PluginsSearchbar
