@@ -14,6 +14,8 @@ There are four parameters:
   * *Switch to HD on Fullscreen* - Automatically switch to high-definition video when users switch to full screen mode
   * *Default HD* - Always start with high-definition video. Users can switch between high and normal definition at any time.
 
+*Please note*: For progressive download video, when users switch between high and low definition, the video restarts. It also restarts when users switch full screen on or off.
+
 ----
 
 == Known Bug ==
