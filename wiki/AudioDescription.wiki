@@ -23,4 +23,10 @@ Please note: Users can switch the Audio Description on and off as desired. If yo
 
 ----
 
+== Known Bug ==
+
+As of 28th January 2010, there is a bug in the Audio Description plugin. The audio always starts automatically, whether the video plays or not. However, the audio and video are synchronised once video playback commences.
+
+----
+
 JW FLV Player developer documentation: http://developer.longtailvideo.com/trac/wiki/PluginsAudiodescription
