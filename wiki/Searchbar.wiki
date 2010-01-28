@@ -3,6 +3,8 @@
 
 <p><img src="http://matbury.com/tutorials/mplayer-docs/mplayer_searchbar.gif" width="863" height="180" alt="Searchbar" /></p>
 
+The Search Bar plugin allows users to search the web (YouTube.com by default) for videos and displays the search results as a playlist.
+
 There are four parameters:
 
   * *Color* - The colour of the search bar button
