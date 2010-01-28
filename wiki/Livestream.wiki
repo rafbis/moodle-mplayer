@@ -26,4 +26,6 @@ The relevant Media Player Livestream code can be found here: http://code.google.
 
 You can see the Livestream plugin in action, continuously checking for a non-existent broadcast, here: http://matbury.com/moodle/mod/mplayer/view.php?id=627 (Login as a guest)
 
+----
+
 JW FLV Player developer documentation: http://developer.longtailvideo.com/trac/wiki/PluginsLivestream
