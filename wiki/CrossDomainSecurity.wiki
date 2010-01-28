@@ -18,7 +18,7 @@ Please remember that crossdomain.xml policy files were created to protect users'
 
 == When you don't need a crossdomain.xml policy file ==
 
-Many media hosting sites already have a "catch all" crossdomain.xml policy file in place. Sites like YouTube.com, TED.com, Yahoo! Video, all allow you to play videos hosted on their servers.
+Many media hosting sites already have a "catch all" crossdomain.xml policy file in place. Sites like YouTube.com and TED.com all allow you to play videos hosted on their servers.
 
 ----
 
