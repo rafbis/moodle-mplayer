@@ -1,4 +1,5 @@
 #summary How to use the Livestream plugin.
+#labels Featured
 
 <p><img src="http://matbury.com/tutorials/mplayer-docs/mplayer_livestream.gif" width="857" height="241" alt="Livestream" /></p>
 
@@ -15,6 +16,14 @@ There are six parameters:
   * *Streamer* - RTMP Media server that broadcasts the live video
   * *Tags (advanced)* - See [http://developer.longtailvideo.com/trac/wiki/PluginsLivestream JW FLV Player Livestream] documentation
 
+*Please note*: The Livestream plugin requires custom configuration by a developer for your particular RTMP media streaming service. Contact your IT support for further information.
+
+The relevant Media Player Livestream code can be found here: http://code.google.com/p/moodle-mplayer/source/browse/trunk/lib.php currently at around line 933 - `function mplayer_list_streamer()`
+
 ----
+
+== Livestream Demo ==
+
+You can see the Livestream plugin in action, continuously checking for a non-existent broadcast, here: http://matbury.com/moodle/mod/mplayer/view.php?id=627 (Login as a guest)
 
 JW FLV Player developer documentation: http://developer.longtailvideo.com/trac/wiki/PluginsLivestream
