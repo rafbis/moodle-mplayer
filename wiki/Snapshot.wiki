@@ -10,6 +10,20 @@ There are two parameters:
 
 ----
 
+== How to take a snapshot ==
+
+  # Go to a Media Player video page with Snapshot enabled and play the video
+  # At the desired point in the video, click on "Select frame at... " at the top of the video window (you can also pause the video)
+  # It will send the snapshot to the server and display, "Sending snapshot, please wait..."
+  # After a second or two it should display, "Snapshot sent; click to return or select another frame"
+  # Click on "click to return"
+  # A new window will open in your browser, showing the snapshot
+  # You can download the snapshot or, if you have teacher capabilities or higher, you can find the image in the course files directory
+
+*Please note*: For security reasons, the provided Snapshot script can only take snapshots of videos hosted on the same site as your Moodle. Allowing users to take Snapshots of videos on unknown, unverified sites is a security risk.
+
+----
+
 == How to configure ==
 
 The Snapshot plugin will not work "out of the box", it requires a little configuration.
