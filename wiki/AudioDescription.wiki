@@ -25,7 +25,7 @@ Please note: Users can switch the Audio Description on and off as desired. If yo
 
 == Known Bug ==
 
-As of 28th January 2010, there is a bug in the Audio Description plugin. The audio always starts automatically, whether the video plays or not. However, the audio and video are synchronised once video playback commences.
+As of 28th January 2010, there is a bug in the Audio Description plugin. The audio always starts automatically, whether the video plays or not, ignoring the Auto Start parameter. However, the audio and video are synchronised once video playback commences. Hopefully, the developers at LongtailVideo.com will fix this bug soon.
 
 ----
 
