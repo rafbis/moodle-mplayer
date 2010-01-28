@@ -22,7 +22,7 @@ The moodle/mod/mplayer/scripts/snapshot.php script is configured to save video s
 
   # On the desired Moodle course, go to: People > Participants and a list of user for that course will appear
   # Click on a user's name to go to their profile page
-  # In the browser address bar you should see something like: `http://localhost/moodle19/user/view.php?id=4&course=13` (`id=4` is the user ID and `course=13` is the course ID)
+  # In the browser address bar you should see something like: `http://example.com/user/view.php?id=4&course=13` (`id=4` is the user ID and `course=13` is the course ID)
   # On the course page, go to Administration > Files
   # Click on "Make a folder" and name it `snapshots`
   # Inside the `snapshots` folder, make another folder and call it `4` (the user ID number)
