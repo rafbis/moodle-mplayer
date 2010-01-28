@@ -17,4 +17,10 @@ There are five parameters:
 
 ----
 
+== Logobox Demo ==
+
+See a demo of the Logobox plugin in action here: http://matbury.com/moodle/mod/mplayer/view.php?id=624 (Login as a guest)
+
+----
+
 JW FLV Player developer documentation: http://developer.longtailvideo.com/trac/wiki/PluginsLogobox
