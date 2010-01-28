@@ -3,6 +3,10 @@
 
 <p><img src="http://matbury.com/tutorials/mplayer-docs/mplayer_snapshot.gif" width="857" height="127" alt="Snapshot" /></p>
 
+The Snapshot plugin takes snapshot images of frames of the video currently being played. The images are saved in a sub-directory of the Moodle course files directory.
+
+----
+
 There are two parameters:
 
   * *Bitmap* - There are two options `true` (default) takes the snapshot of the video frame and sends it to the server-side script or `false` sends frame position data to a server-side script which can then extract the frame there (this script is not supplied).
