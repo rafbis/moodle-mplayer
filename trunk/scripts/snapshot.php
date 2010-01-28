@@ -30,6 +30,7 @@
 
 require_once('../../../config.php');
 global $CFG;
+global $USER;
 
 $id = optional_param('id', 0, PARAM_INT); // Course Module ID
 
@@ -52,31 +53,35 @@ if ($id)
 // Make sure user is logged in
 require_login($course->id);
 
-if(isset ($GLOBALS["HTTP_RAW_POST_DATA"]))
+if(isset ($GLOBALS['HTTP_RAW_POST_DATA']))
 {
 	// Get the image from POST data
-	$mplayer_image =  $GLOBALS["HTTP_RAW_POST_DATA"];
+	$mplayer_image =  $GLOBALS['HTTP_RAW_POST_DATA'];
 	
-	// Create an easy to find unique file name, i.e. "snapshot_year_month_date_hours.mins.secs_789.jpg"
-	$mplayer_datetime = date('Y\_M\_dS\_h\.i\.s\_').rand(0,999);
+	// Create an easy to find unique file name, i.e. "firstname_year_month_date_hours-mins-secs.jpg"
+	$mplayer_filename = $USER->firstname.'_'.date('Y\_M\_dS\_h\-i\-s').'.jpg';
 	
-	// Write the image as a JPG in moodledata/snapshots/
-	if(!$mplayer_filepath = fopen($CFG->dataroot.'/'.$course->id.'/snapshots/snapshot_'.$mplayer_datetime.'.jpg', 'wb'))
-	{
-		echo 'moodledata/'.$course->id.'/snapshots/ directory not found';
+	// Set file path to moodledata snapshots directory for current user
+	$mplayer_snapshots_path = '/'.$course->id.'/snapshots/'.$USER->id.'/';
+	$mplayer_moodledata = $CFG->wwwroot.'/file.php/'.$mplayer_snapshots_path;
+	
+	// Try to write the image as a JPG in moodledata/snapshots/[user ID]/
+	try {
+		$mplayer_filepath = fopen($CFG->dataroot.$mplayer_snapshots_path.$mplayer_filename, 'wb');
+		fwrite($mplayer_filepath, $mplayer_image);
+		fclose($mplayer_filepath);
+	} catch(Exception $e) {
 		exit();
 	}
-	fwrite($mplayer_filepath, $mplayer_image);
-	fclose($mplayer_filepath);
 	
 	// Send the image filename and path back to the Media Player Snapshot plugin
-	$mplayer_moodledata = $CFG->wwwroot.'/file.php/'.$course->id.'/';
-	if (exif_imagetype($CFG->dataroot.'/'.$course->id.'/snapshots/snapshot_'.$mplayer_datetime.'.jpg') == IMAGETYPE_JPEG) {
-		echo $mplayer_moodledata.'snapshots/snapshot_'.$mplayer_datetime.'.jpg';
+	if (exif_imagetype($CFG->dataroot.$mplayer_snapshots_path.$mplayer_filename) == IMAGETYPE_JPEG)
+	{
+		echo $mplayer_moodledata.$mplayer_filename;
 		exit();
 	}
 } else {
-	echo 'error: '.$mplayer_moodledata.'snapshots/snapshot_'.$mplayer_datetime.'.jpg was not written';
+	echo 'error: '.$mplayer_moodledata.$mplayer_filename.' was not saved';
 }
 
 ?>
