@@ -18,7 +18,7 @@ The Snapshot plugin will not work "out of the box", it requires a little configu
 
 The moodle/mod/mplayer/scripts/snapshot.php script is configured to save video snapshots in the course files directory, in a folder called `/snapshots/`, in a sub-folder with the users' ID as the name, e.g. `snapshots/1/` would be for a guest user, `snapshots/2/` would most probably be the site administrator and `snapshots/3/`, `snapshots/4/`, etc. would be other users. If a user's directory does not exist in the course files directory, the script cannot save the snapshot image and will return an error. In this way, it is possible to control exactly who can and can't save snapshots on a user by user, course by course basis.
 
-=== Setting up a snapshots directory for a user ==
+=== Setting up a snapshots directory for a user ===
 
   # On the desired Moodle course, go to: People > Participants and a list of user for that course will appear
   # Click on a user's name to go to their profile page
@@ -29,7 +29,7 @@ The moodle/mod/mplayer/scripts/snapshot.php script is configured to save video s
   # That's it. User '4' can now save video snapshots using the Snapshots plugin.
   # Repeat step 6 for each user that you want to give permission to.
 
- i.e. moodledata/[course ID]/snapshots/[user ID]/
+Other scripts can be used and they're quite simple to write or edit. Any PHP developer should be able to create custom scripts to do exactly what you want.
 
 ----
 
