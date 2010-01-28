@@ -1,5 +1,19 @@
 #summary About crossdomain.xml policy files, why you need them and how to configure them.
 
-Please be patient. Documentation will be here soon.
+== What is cross domain security? ==
+
+Cross domain security is a feature built into Flash Player to protect your computer and servers from malicious code. It cannot be overridden.
+
+If you wan to host videos, audio or images on another domain (web site) you need a correctly configured crossdomain.xml file on that server. For example, if your Moodle domain is `http://mymoodle.com/` and you want to play videos hosted on `http://mymedia.com/`, you need a crossdomain.xml policy file on `http://mymedia.com/` that gives `http://mymoodle.com/` permission to play the videos.
+
+----
+
+== The Flash Player security model has changed ==
+
+There are a lot of examples and tutorials about how to configure crossdomain.xml policy files but many of them are out of date and might not work. See here for a more up-to-date tutorial: http://www.adobe.com/devnet/flashplayer/articles/fplayer9_security.html
+
+Please remember that crossdomain.xml policy files were created to protect users' computers and your servers. It is not recommended to use any methods that circumvent the Flash Player security model, such as proxy scripts, as they can leave computers and servers vulnerable to malicious code attacks.
+
+----
 
 JW FLV Player developer documentation: http://developer.longtailvideo.com/trac/wiki/FlashSecurity
