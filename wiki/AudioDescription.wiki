@@ -11,15 +11,15 @@ The Audio Description plugin synchronises an MP3 audio file with the video. It h
 
 The 3 parameters are:
 
-  * MP3 File - The MP3 audio that you want to synchronise with the video
-  * Auto Start - Start playing audio immediately (there's currently a bug in this)
-  * Volume - Volume of the MP3 audio (independent of the video audio)
+  * *MP3 File* - The MP3 audio that you want to synchronise with the video
+  * *Auto Start* - Start playing audio immediately (there's currently a bug in this)
+  * *Volume* - Volume of the MP3 audio (independent of the video audio)
 
   # Click on the "Choose or upload a file..." button
   # Select the MP3 audio file you want to synchronise with the video
   # Set the Auto Start and Volume parameters as desired
 
-Please note: Users can switch the Audio Description on and off as desired. If you want to replace the video audio, set the video volume to 0.
+*Please note*: Users can switch the Audio Description on and off as desired. If you want to replace the video audio, set the video volume to 0.
 
 ----
 
