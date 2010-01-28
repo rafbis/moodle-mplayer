@@ -2,6 +2,19 @@
 
 <p><img src="http://matbury.com/tutorials/mplayer-docs/mplayer_livestream.gif" width="857" height="241" alt="Livestream" /></p>
 
-Please be patient. A how to guide will be here soon.
+The Livestream plugin checks for the start of a live video broadcast every few seconds. It is useful because users don't have to keep refreshing the web page to see if the broadcast has begun.
+
+----
+
+There are six parameters:
+
+  * *RTMP Stream* - Name or ID of live video broadcast to keep checking
+  * *Image* - A poster image to display at the end of the live video broadcast
+  * *Interval* - Number of seconds between checking for the video (smaller time intervals will put unnecessary strain on your server
+  * *Message* - Text to display while Livestream is checking for the live broadcast to begin
+  * *Streamer* - RTMP Media server that broadcasts the live video
+  * *Tags (advanced)* - See [http://developer.longtailvideo.com/trac/wiki/PluginsLivestream JW FLV Player Livestream] documentation
+
+----
 
 JW FLV Player developer documentation: http://developer.longtailvideo.com/trac/wiki/PluginsLivestream
