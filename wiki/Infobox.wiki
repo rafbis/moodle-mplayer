@@ -5,7 +5,7 @@
 
 <p><img src="http://matbury.com/tutorials/mplayer-docs/mplayer_infobox.gif" width="858" height="155" alt="Infobox" /></p>
 
-The Infobox plugin displays information about the video currently being played. It's useful for complying with media content copyright and licensing agreements.
+The Infobox plugin displays information about the video currently being played. It's useful for complying with media content copyright and licensing agreements. Enter the information in the metadata section of the configuration page (see illustration above).
 
 ----
 
