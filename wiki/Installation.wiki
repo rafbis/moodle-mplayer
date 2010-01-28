@@ -1,2 +1,11 @@
 #summary How to install the Media Player plugin in Moodle
+#labels Featured
 
+Installing the Media Player Activity Module plugin is a short, simple process:
+
+  # Download the latest version of the [http://code.google.com/p/moodle-mplayer/downloads/list Media Player here]
+  # Unzip the package and upload its contents to `MOODLE/mod/mplayer`
+  # Check that your mplayer directory isn't "double skinned", i.e. `MOODLE/mod/mplayer/mplayer`
+  # Login to Moodle and go to Administration > Notifications
+  # The Media Player Activity Module will install
+  # That's it.
