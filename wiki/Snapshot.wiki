@@ -49,7 +49,7 @@ Other scripts can be used and they're quite simple to write or edit. Any PHP dev
 
 == Snapshot Demo ==
 
-See a demo of the Snapshot plugin in action: http://matbury.com/moodle/mod/mplayer/view.php?id=631
+See a demo of the Snapshot plugin in action: http://matbury.com/moodle/mod/mplayer/view.php?id=631 (Login as a guest)
 
 ----
 
