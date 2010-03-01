@@ -1,0 +1,29 @@
+#summary MP4, FLV, M4V but not AVI or WMV... What does this mean?
+#labels Featured
+
+<wiki:toc max_depth="3" />
+
+== What can I play using the Media Player module? ==
+
+The Media Player module and the media player it uses, the [http://longtailvideo.com FLV Player] by Jeroen Widjering, supports all the media types that Flash Player supports. These are:
+
+== Video Media Containers ==
+
+The Media Player module supports the following video media containers:
+
+  * ** 
+
+== Audio Media Containers ==
+
+The Media Player module supports the following audio media containers:
+
+  * ** 
+
+== Image and Animation Media Containers ==
+
+The Media Player module supports the following image media containers:
+
+  * ** 
+
+== Don't confuse media containers with CODECs ==
+
