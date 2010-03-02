@@ -47,6 +47,16 @@ The Media Player module supports the following image media containers:
 
 ----
 
+== The Media Player module doesn't support ==
+
+Flash Player and therefore the JW FLV Player and the Media Player module don't support and cannot play Microsoft proprietary file formats:
+
+  * *AVI* - (.avi) - Audio Video Interleave
+  * *WMV* - (.wmv) - Windows Media Video
+  * *WMA* - (.wma) - Windows Media Audio
+
+----
+
 == Don't confuse media containers with CODECs ==
 
 CODEC is short for "Coder - Decoder" which means they handle the compression and decompression of audio, video and images. A media container can support several different CODECs. The Media Player module supports the following CODECs:
