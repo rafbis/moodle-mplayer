@@ -12,7 +12,7 @@ The Media Player module and the media player it uses, the [http://longtailvideo.
 The Media Player module supports the following video media containers:
 
   * *FLV* - (.flv) - Video for Adobe Flash Player
-  * *F4V* - (.f4v) - Video for Adobe Flash Player using (H.264 CODEC)
+  * *F4V* - (.f4v) - Video for Adobe Flash Player for using H.264 CODEC
   * *F4P* - (.f4p) - DRM`*` Video for Adobe Flash Player 
   * *MOV* - (.mov) - Apple's Quicktime video
   * *MP4* - (.mp4) - Commonly used video format based on MOV
