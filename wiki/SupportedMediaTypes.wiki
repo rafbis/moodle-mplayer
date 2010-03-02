@@ -49,17 +49,20 @@ The Media Player module supports the following image media containers:
 
 == Don't confuse media containers with CODECs ==
 
-CODEC is short for "Coder - Decoder" which means they handle the compression and decompression of audio, video and images. A media container can support several different CODECs.
+CODEC is short for "Coder - Decoder" which means they handle the compression and decompression of audio, video and images. A media container can support several different CODECs. The Media Player module supports the following CODECs:
 
-The Media Player module supports the following CODECs:
 
 === FLV Media Container ===
 
 Video: On2 VP6, Sorenson Spark (Sorenson H.263), Screen video, H.264
+
 Audio: MP3, ADPCM, Linear PCM, Nellymoser, Speex, AAC
+
 
 === F4V Media Container ===
 
 Video: H.264
+
 Audio: AAC, HE-AAC, MP3
+
 Images: GIF, PNG, JPEG (will only display the first frame of animated image files)
