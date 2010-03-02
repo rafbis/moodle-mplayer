@@ -11,31 +11,55 @@ The Media Player module and the media player it uses, the [http://longtailvideo.
 
 The Media Player module supports the following video media containers:
 
-  * *FLV* - Video for Adobe Flash Player (proprietary)
-  * *F4V* - Video for Adobe Flash Player using (H.264 CODEC) (proprietary)
-  * *F4P* - DRM`*` Video for Adobe Flash Player (proprietary)
-  * *MP4* - 
-  * *M4V* - Apple's DRM`*` video for iPods, iPhones, etc. (proprietary)
-  * *3GP* - Open source video (free)
-  * *MOV* - Apple's Quicktime video (proprietary)
+  * *FLV* - .flv - Video for Adobe Flash Player
+  * *F4V* - .f4v - Video for Adobe Flash Player using (H.264 CODEC)
+  * *F4P* - .f4p - DRM`*` Video for Adobe Flash Player 
+  * *MOV* - .mov - Apple's Quicktime video
+  * *MP4* - .mp4 - Commonly used video format based on MOV
+  * *M4V* - .m4v - Apple's DRM`*` video for iPods, iPhones, etc. based on MOV
+  * *3GPP* - .3gp, .3g2 - Commonly used on mobile devices
 
 `*` Digital Rights Management
+
 *Please note:* MP4 and M4V are all based on the MOV video container format and there is very little difference between them. Also, see this explanation about them on [http://en.wikipedia.org/wiki/MP4#.MP4_versus_.M4A_file_extensions Wikipedia.org].
+
+----
 
 == Audio Media Containers ==
 
 The Media Player module supports the following audio media containers:
 
-  * *MP3* - 
-  * *F4A* - Audio for Adobe Flash Player (proprietary)
-  * *F4B* - Audio Book for Adobe Flash Player (proprietary)
-  * *M4A* - Apple's DRM`*` video for iPods, iPhones, etc. (proprietary)
-  * ** - 
+  * *MP3* - The most commonly and widely used and supported audio file type
+  * *F4A* - Audio for Adobe Flash Player
+  * *F4B* - Audio Book for Adobe Flash Player
+  * *M4A* - Apple's DRM`*` audio and audio books for iPods, iPhones, etc.
+
+----
 
 == Image and Animation Media Containers ==
 
 The Media Player module supports the following image media containers:
 
-  * ** 
+  * *GIF* - .gif - Bitmap graphic images. Best for simple graphics and logos. Only displays the first frame of animated images.
+  * *PNG* - .png - Combined bitmap and vector graphic images. Only displays the first frame of animated images.
+  * *JPEG* - .jpg, .jpeg - Bitmap graphic images. Best for photos. Only displays the first frame of animated images.
+  * *SWF* - .swf - Full support of still and animated and bitmap vector graphics.
+
+----
 
 == Don't confuse media containers with CODECs ==
+
+CODEC is short for "Coder - Decoder" which means they handle the compression and decompression of audio, video and images. A media container can support several different CODECs.
+
+The Media Player module supports the following CODECs:
+
+=== FLV Media Container ===
+
+Video: On2 VP6, Sorenson Spark (Sorenson H.263), Screen video, H.264
+Audio: MP3, ADPCM, Linear PCM, Nellymoser, Speex, AAC
+
+=== F4V Media Container ===
+
+Video: H.264
+Audio: AAC, HE-AAC, MP3
+Images: GIF, PNG, JPEG (will only display the first frame of animated image files)
