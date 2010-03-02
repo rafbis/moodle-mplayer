@@ -55,14 +55,11 @@ CODEC is short for "Coder - Decoder" which means they handle the compression and
 === FLV Media Container ===
 
   * *Video:* On2 VP6, Sorenson Spark (Sorenson H.263), Screen video, H.264
-
   * *Audio:* MP3, ADPCM, Linear PCM, Nellymoser, Speex, AAC
 
 
 === F4V Media Container ===
 
   * *Video:* H.264
-
   * *Audio:* AAC, HE-AAC, MP3
-
   * *Images:* GIF, PNG, JPEG (will only display the first frame of animated image files)
