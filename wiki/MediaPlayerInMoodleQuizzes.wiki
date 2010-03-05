@@ -18,7 +18,7 @@ This is a simple hack that only requires a small snippet of HTML code to embed v
   # While editing the question, turn the HTML editor on and include the following HTML code in the page:
 {{{
 <iframe src="http://localhost/moodle/mod/mplayer/embed.php?id=26" width="100%" height="400" >
-<p>Your browser does not support frames</p>
+<p>Your browser does not support iframes</p>
 </iframe>
 }}}
 
