@@ -30,6 +30,6 @@ to
 {{{
 http://localhost/moodle/mod/mplayer/embed.php?id=26
 }}}
-The "embed.php" page is a simplified version of view.php that has had the navigation menus removed.
+The "embed.php" page is a simplified version of view.php without the standard Moodle navigation menus.
 
 The iframe height parameter should be about 50 pixels greater than the height of the Media Player video instance height parameter.
