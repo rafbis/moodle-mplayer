@@ -12,10 +12,10 @@ This is a simple hack that only requires a small snippet of HTML code to embed v
 
 == How to do it ==
 
-Create a Media Player instance anywhere in a Moodle course and make a note (or copy) if the player instance URL, e.g. http://localhost/moodle/mod/mplayer/view.php?id=26
-In the same curse, create a quiz module instance
-Create a question in the question bank where you want the video to be displayed
-While editing the question, turn the HTML editor on and include the following HTML code in the page:
+  # Create a Media Player instance anywhere in a Moodle course and make a note (or copy) if the player instance URL, e.g. `http://localhost/moodle/mod/mplayer/view.php?id=26`
+  # In the same curse, create a quiz module instance
+  # Create a question in the question bank where you want the video to be displayed
+  # While editing the question, turn the HTML editor on and include the following HTML code in the page:
 {{{
 <iframe src="http://localhost/moodle/mod/mplayer/embed.php?id=26" width="100%" height="400" >
 <p>Your browser does not support frames</p>
