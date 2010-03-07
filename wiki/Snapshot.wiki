@@ -24,7 +24,7 @@ There are two parameters:
   # A new window will open in your browser, showing the snapshot
   # You can download the snapshot or, if you have teacher capabilities or higher, you can find the image in the course files directory
 
-*Please note*: For security reasons, the provided Snapshot script can only take snapshots of videos hosted on the same site as your Moodle. Allowing users to take Snapshots of videos on unknown, unverified sites is a security risk.
+*Please note*: For security reasons, the provided Snapshot script can only take snapshots of videos hosted on the same site as your Moodle. Allowing users to take Snapshots of videos on unknown, unverified sites is a security risk. Snapshot doesn't work on videos hosted on YouTube.com.
 
 ----
 
