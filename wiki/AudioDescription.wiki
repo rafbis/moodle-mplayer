@@ -1,6 +1,8 @@
 #summary How to use the Audiodescription plugin.
 #labels Featured
 
+<wiki:toc max_depth="3" />
+
 <p><img src="http://matbury.com/tutorials/mplayer-docs/mplayer_audio_description.gif" width="857" height="154" alt="Audiodescription" /></p>
 
 The Audio Description plugin synchronises an MP3 audio file with the video. It has a variety of uses including Section 508 accessibility, multilingual support, voice-overs, etc.
