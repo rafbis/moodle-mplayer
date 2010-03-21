@@ -1,5 +1,7 @@
 #summary Updates to the Media Player module in reverse chronological order.
 
+<wiki:toc max_depth="3" />
+
 == 2010/01/25 ==
 
   * Uploaded start of project. First working version on Media Player
