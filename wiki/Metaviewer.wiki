@@ -1,6 +1,8 @@
 #summary How to use the Metaviewer plugin.
 #labels Featured
 
+<wiki:toc max_depth="3" />
+
 <p><img src="http://matbury.com/tutorials/mplayer-docs/mplayer_metaviewer.gif" width="858" height="127" alt="Metaviewer" /></p>
 
 The Metaviewer plugin displays all the available metadata contained within the video file currently being played. It's useful for finding out information such as width and height of the video, frame rate, running time, video CODEC, embedded captions and cue points, etc.
