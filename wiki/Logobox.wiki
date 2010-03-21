@@ -1,6 +1,8 @@
 #summary How to use the Logobox plugin.
 #labels Featured
 
+<wiki:toc max_depth="3" />
+
 <p><img src="http://matbury.com/tutorials/mplayer-docs/mplayer_logobox.gif" width="858" height="208" alt="Logobox" /></p>
 
 The Logobox plugin displays a logo image of your choice with the Media Player video. You can also include a link to a file or website when users click on the logo.
