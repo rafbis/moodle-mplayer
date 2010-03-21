@@ -1,5 +1,7 @@
 #summary About crossdomain.xml policy files, why you need them and how to configure them.
 
+<wiki:toc max_depth="3" />
+
 == What is cross domain security? ==
 
 The Flash Player security model protects your computer by not allowing Flash applications to load any files from other domains. For example, a Media Player is deployed on this domain:
