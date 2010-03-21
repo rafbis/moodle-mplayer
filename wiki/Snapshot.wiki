@@ -1,6 +1,8 @@
 #summary How to use the Snapshot plugin.
 #labels Featured
 
+<wiki:toc max_depth="3" />
+
 <p><img src="http://matbury.com/tutorials/mplayer-docs/mplayer_snapshot.gif" width="857" height="127" alt="Snapshot" /></p>
 
 The Snapshot plugin takes snapshot images of frames of the video currently being played. The images are saved in a sub-directory of the Moodle course files directory.
