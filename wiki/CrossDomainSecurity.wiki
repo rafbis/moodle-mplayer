@@ -2,9 +2,27 @@
 
 == What is cross domain security? ==
 
-Cross domain security is a feature built into Flash Player to protect your computer and servers from malicious code. It cannot be overridden.
+The Flash Player security model protects your computer by not allowing Flash applications to load any files from other domains. For example, a Media Player is deployed on this domain:
 
-If you wan to host videos, audio or images on another domain (web site) you need a correctly configured crossdomain.xml file on that server. For example, if your Moodle domain is `http://mymoodle.com/` and you want to play videos hosted on `http://mymedia.com/`, you need a crossdomain.xml policy file on `http://mymedia.com/` that gives `http://mymoodle.com/` permission to play the videos.
+{{{
+http://mydomain.com/
+}}}
+
+and a video file is deployed on this domain:
+
+{{{
+http://anotherdomain.com/
+}}}
+
+If the video player at `http://mydomain/moodle/mod/mplayer/jw/player.swf` tries to load the video file hosted at `http://anotherdomain.com/videos/videofile.mp4`, the Flash Player security model will throw an error and prevent it from loading. This security feature can be circumvented with a proxy script on your server but it is not recommended because of the security risks this entails.
+
+The correct procedure is to use a correctly configured cross domain XML policy file.
+
+----
+
+== Example crossdomain.xml policy file ==
+
+
 
 ----
 
