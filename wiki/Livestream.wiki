@@ -1,6 +1,8 @@
 #summary How to use the Livestream plugin.
 #labels Featured
 
+<wiki:toc max_depth="3" />
+
 <p><img src="http://matbury.com/tutorials/mplayer-docs/mplayer_livestream.gif" width="857" height="241" alt="Livestream" /></p>
 
 The Livestream plugin checks for the start of a live video broadcast every few seconds. It is useful because users don't have to keep refreshing the web page to see if the broadcast has begun.
