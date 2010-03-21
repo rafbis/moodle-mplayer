@@ -1,6 +1,8 @@
 #summary How to use the Captions plugin.
 #labels Featured
 
+<wiki:toc max_depth="3" />
+
 <p><img src="http://matbury.com/tutorials/mplayer-docs/mplayer_captions.gif" width="856" height="181" alt="Captions" /></p>
 
 The Captions plugin displays captions (or subtitles) synchronised with the video playback.
