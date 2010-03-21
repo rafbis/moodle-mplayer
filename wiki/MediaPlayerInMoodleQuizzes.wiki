@@ -1,5 +1,7 @@
 #summary How to display video in Moodle quizzes with the Media Player module.
 
+<wiki:toc max_depth="3" />
+
 This page gives a brief description of how to include instances of the Media Player module in Moodle quizzes but it is equally applicable to any Moodle pages where it's possible to create objects using HTML code.
 
 ----
