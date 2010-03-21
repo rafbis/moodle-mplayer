@@ -1,6 +1,8 @@
 #summary How to use the Infobox plugin.
 #labels Featured
 
+<wiki:toc max_depth="3" />
+
 <p><img src="http://matbury.com/tutorials/mplayer-docs/mplayer_metadata.gif" width="860" height="206" alt="Metadata" /></p>
 
 <p><img src="http://matbury.com/tutorials/mplayer-docs/mplayer_infobox.gif" width="858" height="155" alt="Infobox" /></p>
