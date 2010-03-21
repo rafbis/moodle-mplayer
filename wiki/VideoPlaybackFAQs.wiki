@@ -1,6 +1,8 @@
 #summary Common problems that users have with playing back video.
 #labels Featured
 
+<wiki:toc max_depth="3" />
+
 This page contains the most common problems that users have reported when playing back video using the Media Player module in Moodle.
 
 ----
