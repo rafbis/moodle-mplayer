@@ -1,6 +1,8 @@
 #summary How to use the HD plugin.
 #labels Featured
 
+<wiki:toc max_depth="3" />
+
 <p><img src="http://matbury.com/tutorials/mplayer-docs/mplayer_hd.gif" width="863" height="182" alt="HD" /></p>
 
 The HD plugin provides an alternative high-definition video so that users can switch between high or low definition video according to their internet connection speeds.
