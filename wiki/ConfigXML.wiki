@@ -1,6 +1,8 @@
 #summary How to use a config.xml file with the Media Player plugin
 #labels Featured
 
+<wiki:toc max_depth="3" />
+
 <p><img src="http://matbury.com/tutorials/mplayer-docs/mplayer_configxml.gif" width="858" height="103" alt="Config XML" /></p>
 
 A config.xml file is an external file that configures the Media Player's parameters. It's useful because you can use a single file to set the parameters of any number of Media Players and edit their settings in one place.
