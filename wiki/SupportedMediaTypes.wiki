@@ -55,6 +55,8 @@ Flash Player and therefore the JW FLV Player and the Media Player module don't s
   * *WMV* - (.wmv) - Windows Media Video
   * *WMA* - (.wma) - Windows Media Audio
 
+If you have videos in any of the above formats they most probably won't play in the Media Player module. (I say most probably because one guy managed to get a WMV video to play on a development server but it wouldn't work on a production server.) For best results, recode the source video files to a format that Flash Player does support. If you transcode WMV or AVI files to FLV, MOV, MP4, etc., it'll significantly degrade the video quality and leave "artefacts" in the video streams.
+
 ----
 
 == Don't confuse media containers with CODECs ==
