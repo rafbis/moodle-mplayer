@@ -2,6 +2,15 @@
 
 <wiki:toc max_depth="3" />
 
+----
+
 == 2010/01/25 ==
 
-  * Uploaded start of project. First working version on Media Player
+  * Included code to push "view" value into Moodle Participation reports.
+  * Changed lib.php embed code to ignore default mod form settings so that they don't override settings in config.xml files.
+
+----
+
+== 2010/01/25 ==
+
+  * Uploaded start of project. First working version on Media Player.
