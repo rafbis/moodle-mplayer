@@ -11,3 +11,11 @@ Installing the Media Player Activity Module plugin is a short, simple process:
   # Login to Moodle and go to Administration > Notifications
   # The Media Player Activity Module will install
   # That's it.
+
+If you experience any problems, such as a blank screen or error messages immediately after installation/upgrade, try this:
+
+  # Go to Administration > Modules > Activities > Media Player
+  # (Optional) Adjust any site wide Media Player module settings
+  # Save Changes
+
+This will prevent any empty parameter values from being passed on the the Media Player module and triggering errors.
